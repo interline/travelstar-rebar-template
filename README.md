@@ -4,8 +4,7 @@
 
 ```sh-session
 $ mkdir -p ~/.rebar/templates
-$ git clone git://github.com/interline/travelstar-rebar-template.git \
-    ~/.rebar/templates/travelstar
+$ git clone git://github.com/interline/travelstar-rebar-template.git ~/.rebar/templates/travelstar
 ```
 
 ## Use
