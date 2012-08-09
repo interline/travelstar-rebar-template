@@ -1,0 +1,37 @@
+{variables, [
+    {appid, "myapp"},
+    {description, ""}
+]}.
+
+% /
+{template, "travelstar/Makefile", "Makefile"}.
+{file, "travelstar/rebar", "rebar"}.
+{chmod, 8#744, "rebar"}.
+{template, "travelstar/rebar.config", "rebar.config"}.
+{template, "travelstar/start.sh", "start.sh"}.
+{chmod, 8#744, "start.sh"}.
+{template, "travelstar/README.md", "README.md"}.
+
+% etc/
+{template, "travelstar/etc/app.config", "etc/app.config"}.
+
+% rel/
+{template, "travelstar/rel/reltool.config", "rel/reltool.config"}.
+
+% rel/files
+{template, "travelstar/rel/files/app.config", "rel/files/app.config"}.
+{file, "travelstar/rel/files/erl", "rel/files/erl"}.
+{chmod, 8#744, "rel/files/erl"}.
+{file, "travelstar/rel/files/nodetool", "rel/files/nodetool"}.
+{chmod, 8#744, "rel/files/nodetool"}.
+{file, "travelstar/rel/files/start_erl.cmd", "rel/files/start_erl.cmd"}.
+{file, "travelstar/rel/files/sys.config", "rel/files/sys.config"}.
+{template, "travelstar/rel/files/travelstar", "rel/files/{{appid}}"}.
+{chmod, 8#744, "rel/files/{{appid}}"}.
+{template, "travelstar/rel/files/travelstar.cmd", "rel/files/{{appid}}.cmd"}.
+{template, "travelstar/rel/files/vm.args", "rel/files/vm.args"}.
+
+% src/
+{template, "travelstar/src/travelstar.app.src", "src/{{appid}}.app.src"}.
+{template, "travelstar/src/travelstar.erl", "src/{{appid}}.erl"}.
+{template, "travelstar/src/travelstar_server.erl", "src/{{appid}}_server.erl"}.

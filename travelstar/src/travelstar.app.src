@@ -1,0 +1,7 @@
+{application, {{appid}}, [
+    {description, "{{description}}"},
+    {vsn, "0.1.0"},
+    {applications, [kernel, stdlib]},
+    {registered, [{{appid}}]},
+    {mod, { {{appid}}, []}}
+]}.

@@ -1,0 +1,10 @@
+.DS_Store
+.eunit
+erl_crash.dump
+*.beam
+*.app
+*.pyc
+Mnesia.*
+log
+deps
+rel/{{appid}}
